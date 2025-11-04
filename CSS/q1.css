@@ -1,0 +1,124 @@
+/* Portfolio Theme - Custom colors, layout, units */
+body {
+  background: #f8fafc; /* Light bg for contrast */
+  color: #163059; /* Text with high contrast */
+  margin: 0;
+}
+
+/* Fixed header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 64px; /* px unit */
+  background: #3456e9;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em; /* em unit */
+  z-index: 10;
+}
+
+header nav a {
+  margin-left: 2em;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem; /* rem unit */
+}
+
+/* Offset main from fixed header */
+main {
+  margin-top: 66px; /* px to avoid overlay */
+  min-height: 70vh; /* vh unit for main area */
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 4vw; /* % units (vw) for spaces */
+}
+
+.bio img {
+  width: 180px; /* px for image */
+  height: auto;
+  border-radius: 30%;
+  border: 3px solid #3456e9;
+}
+
+/* Footer sticks to bottom */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 48px;
+  background: #163059;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Portfolio Theme - Custom colors, layout, units */
+body {
+  background: #f8fafc; /* Light bg for contrast */
+  color: #163059; /* Text with high contrast */
+  margin: 0;
+}
+
+/* Fixed header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 64px; /* px unit */
+  background: #3456e9;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em; /* em unit */
+  z-index: 10;
+}
+
+header nav a {
+  margin-left: 2em;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem; /* rem unit */
+}
+
+/* Offset main from fixed header */
+main {
+  margin-top: 66px; /* px to avoid overlay */
+  min-height: 70vh; /* vh unit for main area */
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 4vw; /* % units (vw) for spaces */
+}
+
+.bio img {
+  width: 180px; /* px for image */
+  height: auto;
+  border-radius: 30%;
+  border: 3px solid #3456e9;
+}
+
+/* Footer sticks to bottom */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 48px;
+  background: #163059;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

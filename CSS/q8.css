@@ -1,0 +1,74 @@
+body { margin: 0; font-family: Arial, sans-serif; background: #f6f8fb; }
+header {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; background: #3456e9;
+  color: #fff; padding: 1.5em 2em;
+  font-size: 1.5em; z-index: 10;
+}
+
+/* Dashboard container */
+.container {
+  display: flex;
+  height: 100vh;
+  padding-top: 64px; /* Offset for header */
+}
+
+/* Sidebar rules */
+.sidebar {
+  min-width: 220px;
+  height: 100vh;
+  background: #163059;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2em 1em;
+  position: sticky; /* for scrolling */
+  top: 64px;
+}
+
+/* Sidebar navigation */
+.sidebar nav a {
+  color: #fff;
+  margin-bottom: 2em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Main content area and box styles */
+.main-content {
+  flex: 1;
+  display: flex;
+  gap: 2.5em;
+  padding: 2em;
+  align-items: flex-start;
+}
+
+.content-box {
+  background: #fff;
+  flex: 1;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 4px 16px rgba(52,86,233,0.10);
+  min-height: 220px;
+}
+
+/* Responsive stacking */
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100vw;
+    min-width: unset;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em 0;
+  }
+  .sidebar nav a { margin: 0 1.2em; }
+  .main-content { flex-direction: column; gap: 1.3em; }
+}
+
+/* Comments: flexbox creates layout, sidebar sticky, responsive stacking */

@@ -1,0 +1,112 @@
+body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f9fafc; }
+
+/* Sticky header */
+header {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background: #3456e9;
+  color: #fff;
+  padding: 1.5em 2em;
+  z-index: 100;
+  margin-bottom: 0;
+}
+header nav { display: flex; gap: 2em; }
+header nav a { color: #fff; text-decoration: none; font-weight: 600; }
+
+/* Hero section with background image and centered text */
+.hero {
+  background: linear-gradient(rgba(52,86,233,0.6), rgba(52,86,233,0.25)), url('hero-bg.jpg') center/cover no-repeat;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 1px 2px 20px #3456e9;
+}
+
+/* About: two columns, align center */
+.about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+  align-items: center;
+  padding: 3em 2em;
+  background: #eee;
+}
+.about-text h2 { font-size: 2em; }
+.about-img img {
+  max-width: 100%;
+  border-radius: 1em;
+  outline: 3px solid #3456e9;
+}
+
+/* Services: three boxes in a row */
+.services {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  padding: 2em;
+  background: linear-gradient(90deg, #e8eaf6, #c5cae9 85%);
+}
+.service-box {
+  background: rgba(52,86,233,0.07);
+  flex: 1;
+  margin: 0 8px;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 3px 14px rgba(52,86,233,0.17);
+  border: 2px solid #3456e9;
+  font-weight: 700;
+  color: #3456e9;
+  text-align: center;
+}
+
+/* Contact form styles */
+.contact {
+  background: #fff; padding: 3em 2em; display: flex; justify-content: center;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  width: 100%; max-width: 350px;
+}
+.contact input, .contact textarea {
+  border: 1.5px solid #3456e9;
+  border-radius: 0.6em;
+  padding: 0.8em;
+  outline: none;
+}
+.contact textarea { min-height: 80px; }
+.contact button {
+  background: #3456e9;
+  color: #fff;
+  padding: 0.8em 0;
+  border-radius: 0.5em;
+  border: none;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+footer {
+  background: #163059; color: #fff;
+  text-align: center; padding: 2em 0;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 900px) {
+  .about { grid-template-columns: 1fr; gap: 2em; }
+  .services { flex-direction: column; gap: 1em; }
+}
+
+@media (max-width: 650px) {
+  .hero h1 { font-size: 2rem; }
+  .about { padding: 2em; }
+  .services { padding: 1em; }
+}
+
+/* Comments: grid/flex for alignment, box-model with padding/margin/border/outline, gradients and rgba for backgrounds, positioning for sticky header */

@@ -1,0 +1,19 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+  <h2>Login Form</h2>
+  <form>
+    <label>Username: <input type="text" name="username" required></label><br>
+    <label>Password: <input type="password" name="password" required></label><br>
+    <input type="hidden" name="csrf_token" value="dummy_csrf_token">
+    <!-- CSRF token helps prevent Cross-Site Request Forgery attacks by verifying the request is genuine -->
+    <input type="submit" value="Login">
+  </form>
+</body>
+</html>

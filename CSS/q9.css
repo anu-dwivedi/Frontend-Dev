@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background: #fffde7; /* Custom page background */
+  font-family: 'Merriweather', serif;
+}
+
+.magazine-content {
+  max-width: 900px;
+  margin: 3vh auto;
+  background: #fff;
+  padding: 2em 2em;
+  border-radius: 1em;
+  box-shadow: 0 2px 12px rgba(34,90,155,0.20);
+  column-count: 3;
+  column-gap: 2em;
+}
+
+.headline {
+  font-size: 2.4em;
+  font-weight: 900;
+  column-span: all;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.magazine-img {
+  float: left;
+  width: 150px;
+  margin: 0 1.5em 1.5em 0;
+  border-radius: 1em;
+  box-shadow: 0 2px 8px rgba(52,86,233,0.10);
+}
+
+p {
+  text-align: justify;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  font-family: inherit;
+}
+
+/* Responsive: reduce columns */
+@media (max-width:900px){
+  .magazine-content { column-count: 2;}
+}
+@media (max-width:600px){
+  .magazine-content { column-count: 1;}
+}
+
+/* Comments: column-count for columns, headline spans all, float for image, justify for text */

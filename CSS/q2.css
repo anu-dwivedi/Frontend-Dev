@@ -1,0 +1,54 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+
+header, nav, footer {
+  padding: 1em;
+  background: #222;
+  color: #fff;
+}
+
+/* Full-width backgrounds for sections */
+.intro {
+  background: url("city.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 6vh 2vw;
+  color: #fff;
+  border-bottom: 2px solid #3456e9;
+  font-size: 1.2rem;
+}
+
+.gradient-linear {
+  background: linear-gradient(to right, #e2e2e2 60%, #a8d8ea 100%);
+  padding: 5vh 2vw;
+  border-bottom: 2px solid #222;
+  /* Parallax effect */
+  background-attachment: fixed; /* Keeps background fixed when scrolling */
+}
+
+.gradient-radial {
+  background: radial-gradient(circle, #ffe0b2 50%, #ff8a65 100%);
+  padding: 5vh 2vw;
+  border-bottom: 2px solid #ff8a65;
+  background-attachment: fixed; /* Parallax effect */
+}
+
+h1 { font-size: 2.5rem; font-weight: 800; }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+/* Space and borders */
+section {
+  margin-bottom: 1.5em;
+  border-radius: 1em;
+}
+
+/* Footer always at the bottom */
+footer {
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* Comments are used to explain logic for background, gradients, and parallax effect above */

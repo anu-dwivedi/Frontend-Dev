@@ -1,0 +1,19 @@
+<!-- payment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Form</title>
+</head>
+<body>
+  <h2>Payment Details</h2>
+  <form>
+    <input name="cardholder" type="text" placeholder="Cardholder Name" required><br>
+    <input name="cardnumber" type="text" placeholder="Card Number" required><br>
+    <input name="expiry" type="text" placeholder="Expiry Date (MM/YY)" pattern="(0[1-9]|1[0-2])\/\d{2}" required><br>
+    <input name="cvv" type="password" placeholder="CVV" required><br>
+    <input type="submit" value="Pay Now">
+  </form>
+</body>
+</html>

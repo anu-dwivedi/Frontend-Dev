@@ -1,0 +1,27 @@
+<!-- form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Iframe Result</title>
+</head>
+<body>
+  <h2>Submit Form</h2>
+  <form target="resultFrame" action="result.html">
+    <input type="text" name="data" placeholder="Enter text">
+    <input type="submit" value="Submit">
+  </form>
+  <iframe name="resultFrame" width="100%" height="50" title="Form submission result"></iframe>
+</body>
+</html>
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Result</title>
+</head>
+<body>
+  Form successfully submitted.
+</body>
+</html>
