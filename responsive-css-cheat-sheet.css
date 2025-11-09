@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+  background: #f5f8ff;
+}
+
+.cheat-sheet {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding: 1rem;
+}
+
+.topic {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+.topic:hover {
+  background: linear-gradient(135deg, #6a9ef8, #91c1ff);
+  color: white;
+}
+
+.topic code {
+  background: #eef4ff;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+/* Small screens: stack */
+@media (max-width: 700px) {
+  .cheat-sheet {
+    grid-template-columns: 1fr;
+  }
+}
