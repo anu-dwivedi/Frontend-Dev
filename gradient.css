@@ -1,0 +1,11 @@
+/* q3.css */
+body { margin: 0; font-family: Arial; color: white; text-align: center; }
+header, footer { position: fixed; left: 0; width: 100%; padding: 10px; background: #333; }
+header { top: 0; }
+footer { bottom: 0; }
+section {
+  height: 100vh;
+  display: flex; justify-content: center; align-items: center;
+}
+.linear { background: linear-gradient(to right, blue, pink); }
+.radial { background: radial-gradient(circle, orange, purple); background-attachment: fixed; }

@@ -1,0 +1,47 @@
+/* Base styles */
+body {
+  margin: 0; font-family: Arial, sans-serif;
+  background: #f8f9fa;
+}
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  flex: 1 1 calc(25% - 1rem);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.11);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 220px;
+}
+
+/* Hover background change */
+.card:hover {
+  background-color: #e2e6f5;
+}
+
+/* Tablet: 2 cols max-width 900px */
+@media (max-width: 900px) {
+  .card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+/* Mobile: 1 col max-width 600px */
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+

@@ -1,0 +1,12 @@
+/* q4.css */
+.cards {
+  display: flex; justify-content: space-around;
+  margin: 80px auto; max-width: 900px;
+}
+.card {
+  background: white; padding: 20px; width: 200px;
+  box-shadow: 2px 2px 6px gray;
+  transition: all 0.3s ease; text-align: center;
+}
+.card h2 { text-shadow: 1px 1px 2px gray; }
+.card:hover { box-shadow: 5px 5px 15px rgba(0,0,0,0.4); transform: translateY(-5px); }
