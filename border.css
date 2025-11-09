@@ -1,0 +1,17 @@
+/* q1.css */
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+}
+.box {
+  padding: 30px;
+  width: 100px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+.solid { border: 3px solid teal; border-radius: 10px; }
+.dashed { border: 3px dashed crimson; border-radius: 20px; }
+.double { border: 6px double orange; border-radius: 15px; }
+.groove { border: 6px groove purple; border-radius: 25px; }
+.box:hover { border-color: black; }

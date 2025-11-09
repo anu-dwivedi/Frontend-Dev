@@ -1,0 +1,12 @@
+/* q9.css */
+form {
+  display: flex; flex-direction: column; gap: 10px;
+  width: 300px; margin: 50px auto;
+}
+input, textarea {
+  padding: 10px; border-radius: 5px; border: 1px solid #ccc;
+  outline: 2px solid transparent; transition: all 0.3s ease;
+}
+input:focus, textarea:focus {
+  outline: 2px solid blue; outline-offset: 3px; box-shadow: 0 0 5px lightblue;
+}

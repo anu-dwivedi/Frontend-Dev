@@ -1,0 +1,11 @@
+/* q6.css */
+body { display: flex; justify-content: center; align-items: center; height: 100vh; }
+.container { display: flex; gap: 20px; }
+.box {
+  background: teal; color: white; padding: 30px; transition: all 0.4s ease;
+  text-align: center;
+}
+.rotate:hover { transform: rotate(20deg); }
+.scale:hover { transform: scale(1.2); }
+.translate:hover { transform: translateY(-15px); }
+.skew:hover { transform: skewX(20deg); }

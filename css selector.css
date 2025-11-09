@@ -1,0 +1,15 @@
+/* q5.css */
+/* Attribute selectors */
+a[href^="https"] { color: green; }
+input[type="text"] { border: 2px solid blue; }
+
+/* Pseudo-classes */
+a:hover { text-decoration: underline; }
+input:focus { border-color: orange; }
+
+/* Pseudo-elements */
+a::before { content: "→ "; }
+li:nth-child(odd) { background: #eee; }
+
+/* Combinators */
+ul > li { margin: 10px; }

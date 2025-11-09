@@ -1,0 +1,13 @@
+/* q2.css */
+body, html { height: 100%; }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+}
+.box { color: white; display: flex; align-items: center; justify-content: center; overflow: auto; }
+.one  { background: teal; height: 100px; width: 50%; }
+.two  { background: tomato; height: 20vh; width: 200px; max-width: 90%; }
+.three{ background: purple; height: 5em; min-height: 40px; }
