@@ -1,0 +1,49 @@
+.anim-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+/* Moving Box */
+.animated-box {
+  width: 60px; height: 60px;
+  background: #44c8f5;
+  border-radius: 8px;
+  animation: moveBox 2s ease-in-out infinite alternate;
+  animation-delay: 0.5s;
+}
+
+/* Animation Keyframes */
+@keyframes moveBox {
+  from {transform: translateX(0);}
+  to {transform: translateX(180px);}
+}
+
+/* Bouncing Ball */
+.bounce-ball {
+  width: 40px; height: 40px;
+  background: #ffdf7e;
+  border-radius: 50%;
+  animation: bounce 1.2s ease-in-out infinite alternate;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {transform: translateY(0);}
+  to {transform: translateY(-70px);}
+}
+
+/* Color Changing Text */
+.animate-text {
+  animation: textColor 2.5s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes textColor {
+  from {color: #0275d8;}
+  to {color: #2ecc40;}
+}

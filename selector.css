@@ -1,0 +1,56 @@
+/* Element selector (paragraph) */
+p {
+  color: #333;
+  margin-bottom: 0.8em;
+}
+
+/* Class selector */
+.highlight {
+  background: #ffeeba;
+  padding: 0.4em;
+}
+
+/* ID selector */
+#special {
+  color: #0275d8;
+  font-weight: bold;
+}
+
+/* Attribute selector */
+a[target="_blank"] {
+  color: #d9534f;
+  text-decoration: underline;
+}
+
+/* Descendant selector */
+ul span {
+  font-style: italic;
+}
+
+/* Child selector */
+ul > li {
+  margin-bottom: 0.5em;
+}
+
+/* Adjacent sibling selector */
+h2 + p {
+  background: #e2e2f7;
+  padding: 0.3em 0.6em;
+}
+
+/* General sibling selector */
+h3 ~ p {
+  color: #5bc0de;
+}
+
+/* Layout and spacing */
+main {
+  padding: 2rem;
+}
+header, footer {
+  background: #f7f7f7;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
