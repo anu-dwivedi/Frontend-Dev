@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Directory</title>
+  <link rel="stylesheet" href="team.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<main>
+  <section>
+    <div class="department" data-dept="Engineering">
+      <h2 class="deptName">Engineering</h2>
+      <div class="manager member" data-role="manager">Amit (Manager)
+        <div class="contact">amit@company.com</div>
+      </div>
+      <div class="member report">Priya<div class="contact">priya@company.com</div></div>
+      <div class="member report">Sunil<div class="contact">sunil@company.com</div></div>
+    </div>
+    <div class="department" data-dept="Sales">
+      <h2 class="deptName">Sales</h2>
+      <div class="manager member" data-role="manager">Neha (Manager)
+        <div class="contact">neha@company.com</div>
+      </div>
+      <div class="member report">Vikas<div class="contact">vikas@company.com</div></div>
+      <div class="member report">Tanvi<div class="contact">tanvi@company.com</div></div>
+    </div>
+  </section>
+  <button id="randomBtn">Highlight Random Employee Siblings</button>
+  <button id="collapseBtn">Collapse/Expand Teams</button>
+</main>
+<script src="team.js"></script>
+</body>
+</html>

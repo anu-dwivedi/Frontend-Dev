@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subscriptions</title>
+  <link rel="stylesheet" href="subscriptions.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <h2>Event Subscriptions</h2>
+  <div id="panel">
+    <ul id="topics">
+      <li><input type="checkbox" class="topic" value="Sports"> Sports</li>
+      <li><input type="checkbox" class="topic" value="Tech"> Tech</li>
+      <li><input type="checkbox" class="topic" value="Music"> Music</li>
+      <li><input type="checkbox" class="topic" value="Movies"> Movies</li>
+      <li><input type="checkbox" class="topic" value="News"> News</li>
+    </ul>
+    <input id="addTopic" type="text" placeholder="New Topic">
+    <button id="btnAddTopic">Add Topic</button>
+    <button id="btnRemoveMusic">Remove Music</button>
+  </div>
+  <div id="successMsg" style="display:none;"></div>
+  <script src="subscriptions.js"></script>
+</body>
+</html>

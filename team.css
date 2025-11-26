@@ -1,0 +1,7 @@
+.department { margin: 20px 0; padding: 1em; background: #f1f9ff; border-radius: 5px; }
+.manager { font-weight: bold; color: #205; }
+.member { margin: .4em 0; cursor:pointer; }
+.contact { display:none; font-size: 0.85em; color:#295;}
+.member.highlight, .member.sibling-highlight { background: #f7f4d5 !important; }
+.department.selected .member { background: #e1ffd7; }
+.hideMembers .report { display:none; }

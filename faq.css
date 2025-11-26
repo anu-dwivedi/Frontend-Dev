@@ -1,0 +1,5 @@
+.faq-item { margin: 1rem 0; }
+.question { cursor: pointer; background: #eef; padding: .5rem; transition: background 0.2s;}
+.question.hovered { background: #cce; }
+.answer { padding: .3rem 1rem; display: none; }
+.faq-item.focused { outline: 2px solid #21d; }
