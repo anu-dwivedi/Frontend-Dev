@@ -1,0 +1,9 @@
+{
+  "products": [
+    { "id": 1, "name": "Phone X", "price": 19999, "image": "phone.jpg" },
+    { "id": 2, "name": "Laptop Pro", "price": 44999, "image": "laptop.jpg" },
+    { "id": 3, "name": "Bluetooth Headphones", "price": 3999, "image": "headphones.jpg" },
+    { "id": 4, "name": "Smartwatch", "price": 5999, "image": "smartwatch.jpg" },
+    { "id": 5, "name": "Tablet S", "price": 13999, "image": "tablet.jpg" }
+  ]
+}
