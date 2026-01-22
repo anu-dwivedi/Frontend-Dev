@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "email": "rahul@gla.ac.in",
+      "city": "Agra"
+    },
+    {
+      "id": 2,
+      "name": "Priya Singh", 
+      "email": "priya@gmail.com",
+      "city": "Delhi"
+    }
+  ],
+  "total": 2
+}

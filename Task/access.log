@@ -1,0 +1,10 @@
+{
+  "inputFile": "access.log",
+  "analyzedAt": "2026-01-22T16:25:00.000Z",
+  "stats": {
+    "totalLines": 20000,
+    "error": 10000,
+    "warning": 0,
+    "info": 10000
+  }
+}

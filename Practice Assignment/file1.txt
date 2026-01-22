@@ -1,0 +1,4 @@
+mkdir oldfiles
+echo "old data" > oldfiles/file1.txt
+echo "recent" > oldfiles/file2.txt
+touch -d "8 days ago" oldfiles/file1.txt  # Make file1 old
